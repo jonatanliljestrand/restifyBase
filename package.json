@@ -1,0 +1,31 @@
+{
+  "name": "pantat",
+  "version": "1.0.0",
+  "description": "Search things on pantbanken.se",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node_modules/mocha/bin/mocha -w ./tests/*",
+    "coverage": "node_modules/istanbul/lib/cli.js cover _mocha -- -R spec ./tests/*",
+    "lint": "node node_modules/eslint/bin/eslint.js controllers lib utils --fix",
+    "dev": "node node_modules/nodemon/bin/nodemon.js index.js"
+  },
+  "author": "Jonatan Liljestrand",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "node-restify-swagger": "^0",
+    "q": "^1",
+    "restify": "^5",
+    "request": "^2.81.0",
+    "yql-node": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^4",
+    "eslint-config-airbnb-base": "^11",
+    "eslint-plugin-import": "^2",
+    "istanbul": "^0",
+    "mocha": "^3",
+    "nock": "^9"
+  }
+}

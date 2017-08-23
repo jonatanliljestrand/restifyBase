@@ -1,0 +1,12 @@
+{
+  "urls": {
+    "imageBase": "http://localhost:8080",
+    "swagger": "http://localhost:8080",
+    "apiBase": "http://localhost:8080"
+  },
+  "listenPort": "8080",
+  "serverConfiguration": {
+    "name": "Service",
+    "version": "1.0.0"
+  }
+}
