@@ -1,6 +1,10 @@
 
 exports.getSample = (req, res, next) => {
-  const sendString = `${req.params}`;
-  res.send(sendString);
+  const returnObject = { 
+    parameters: req.params,
+    body: req.body
+  };
+
+  res.send(returnObject);
   return next();
 };

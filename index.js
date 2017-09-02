@@ -1,11 +1,5 @@
-const server = require('./lib/server');
-
-const serverInstance = server.createWithBasePath('/api');
+const serverInstance = require('./lib/server').create();
 const logger = require('./utils/logger');
-const config = require('./config.json');
+const listenPort = require('./config.json').listenPort;
 
-const listenPort = config.listenPort;
-
-serverInstance.initiate(listenPort, () => {
-  logger.log(`Started to listen: ${listenPort}`);
-});
+serverInstance.initiate(listenPort);

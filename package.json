@@ -1,7 +1,7 @@
 {
-  "name": "pantat",
-  "version": "1.0.0",
-  "description": "Search things on pantbanken.se",
+  "name": "sample-service",
+  "version": "0.1.0",
+  "description": "A shell for restify services.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,14 +11,11 @@
     "dev": "node node_modules/nodemon/bin/nodemon.js index.js"
   },
   "author": "Jonatan Liljestrand",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "node-restify-swagger": "^0",
     "q": "^1",
     "restify": "^5",
-    "request": "^2.81.0",
-    "yql-node": "^0.2.1"
+    "request": "^2"
   },
   "devDependencies": {
     "eslint": "^4",
