@@ -1,8 +1,8 @@
 
 exports.getSample = (req, res, next) => {
-  const returnObject = { 
+  const returnObject = {
     parameters: req.params,
-    body: req.body
+    body: req.body,
   };
 
   res.send(returnObject);
