@@ -1,6 +1,7 @@
 {
   "urls": {
-    "imageBase": "http://localhost:8080"
+    "imageBase": "http://localhost:8080",
+    "sampleUrl": "http://sample:80"
   },
   "listenPort": "8080",
   "serverConfiguration": {
@@ -8,6 +9,6 @@
     "version": "1.0.0"
   },
   "test": {
-    "apiBase": "http://localhost:8080"    
+    "apiBase": "http://localhost:8080"
   }
 }

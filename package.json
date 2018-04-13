@@ -13,16 +13,16 @@
   "author": "Jonatan Liljestrand",
   "license": "MIT",
   "dependencies": {
-    "q": "^1",
-    "restify": "^5",
-    "request": "^2"
+    "q": "^1.5.1",
+    "request": "^2.85.0",
+    "restify": "^7.1.1"
   },
   "devDependencies": {
-    "eslint": "^4",
-    "eslint-config-airbnb-base": "^11",
-    "eslint-plugin-import": "^2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12",
+    "eslint-plugin-import": "^2.11.0",
     "istanbul": "^0",
-    "mocha": "^3",
-    "nock": "^9"
+    "mocha": "^5.1",
+    "nock": "^9.2.5"
   }
 }
