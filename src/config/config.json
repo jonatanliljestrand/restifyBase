@@ -3,10 +3,10 @@
     "imageBase": "http://localhost:8080",
     "sampleUrl": "http://sample:80"
   },
-  "listenPort": "8080",
   "serverConfiguration": {
     "name": "Service",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "listenPort": "8080"
   },
   "test": {
     "apiBase": "http://localhost:8080"

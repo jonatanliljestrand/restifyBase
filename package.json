@@ -1,27 +1,40 @@
 {
-  "name": "sample-service",
+  "name": "restify-service-template",
   "version": "0.1.0",
-  "description": "A shell for restify services.",
-  "main": "index.js",
+  "description": "A template for restify services.",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node_modules/mocha/bin/mocha -w ./tests/*",
-    "coverage": "node_modules/istanbul/lib/cli.js cover _mocha -- -R spec ./tests/*",
-    "lint": "node node_modules/eslint/bin/eslint.js controllers lib utils --fix",
+    "start": "npm run compile; npm run run",
+    "run": "node dist/index.js",
+    "compile": "node_modules/.bin/tsc",
+    "test": "node_modules/mocha/bin/mocha -w --require ts-node/register src/tests/*",
+    "coverage": "node_modules/istanbul/lib/cli.js cover _mocha -- -R spec src/tests/*spec.ts",
+    "lint": "node node_modules/eslint/bin/eslint.js src/*.ts src/**/*.ts --fix",
     "dev": "node node_modules/nodemon/bin/nodemon.js index.js"
   },
   "author": "Jonatan Liljestrand",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "restify": "^7.2"
+    "@types/restify": "^7.2.6",
+    "@types/restify-errors": "^4.3.3",
+    "axios": "^0.18",
+    "restify": "^7.2",
+    "restify-errors": "^6.1",
+    "tsutils": "^3.5",
+    "typescript": "^3.2"
   },
   "devDependencies": {
-    "eslint": "^5.6.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
+    "@types/chai": "^4.1",
+    "@types/mocha": "^5.2",
+    "@types/node": "^10.12.17",
+    "chai": "^4.2",
+    "eslint": "^5.10",
+    "eslint-config-airbnb-base": "^13.1",
+    "eslint-plugin-import": "^2.14",
     "istanbul": "^0",
-    "mocha": "^5.1",
-    "nock": "^9.2.5"
+    "mocha": "^5.2",
+    "nodemon": "^1.18",
+    "ts-node": "^7.0.1",
+    "typescript-eslint-parser": "^21.0"
   }
 }

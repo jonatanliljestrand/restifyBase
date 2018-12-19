@@ -1,4 +1,5 @@
 /* eslint-disable no-undef, no-console */
+/*
 const request = require('request');
 const nock = require('nock');
 const testConfiguration = require('../config').test;
@@ -52,3 +53,4 @@ describe('Testing /postSample', () => {
     });
   });
 });
+*/
