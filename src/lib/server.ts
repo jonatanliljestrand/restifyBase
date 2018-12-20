@@ -4,7 +4,7 @@ import ping from '../controllers/pingController';
 
 import log from './utils/logger';
 
-export default function createServer(serverConfiguration) {
+export default function createServer(serverConfiguration: any) {
     const server = restify.createServer(serverConfiguration);
     let serverInstance: any = {};
 
@@ -16,7 +16,7 @@ export default function createServer(serverConfiguration) {
     server.get('/getSample', getSample);
     server.post('/postSample/:variable1/:variable2', postSample);
 
-    function initiate(callback = null) {
+    function initiate(callback: (() => any) | null = null) {
         serverInstance = server.listen(serverConfiguration.listenPort, () => {
             log(`Started to listen: ${serverConfiguration.listenPort}`);
             if (callback) {
@@ -25,7 +25,7 @@ export default function createServer(serverConfiguration) {
         });
     }
 
-    function stop(callback = null) {
+    function stop(callback: (() => any) | null = null) {
         serverInstance.close(() => {
             log('Service stopped');
 

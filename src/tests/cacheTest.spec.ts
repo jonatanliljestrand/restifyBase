@@ -22,7 +22,7 @@ describe('Cache', () => {
         it('Should have value null', () => {
             const cache = new Cache();
             const result = cache.getValue();
-            const expected = null;
+            const expected: any = null;
 
             expect(result).to.equal(expected);
         });
@@ -30,7 +30,7 @@ describe('Cache', () => {
             const expected = { testObject: 'test string' };
             const cache = new Cache(50);
             cache.update(expected);
-            const result = cache.getValue();
+            const result: any = cache.getValue();
 
             result.should.equal(expected);
         });
@@ -51,14 +51,14 @@ describe('Cache', () => {
 
         it('Should return the cached value', () => {
             const expected = { testObject: 'test string' };
-            const cache = new Cache(500, expected);
+            const cache = new Cache<any>(500, expected);
             const result = cache.getValue();
 
             result.should.equal(expected);
         });
 
         it('Should not be valid if cache time runs out', async () => {
-            const cache = new Cache(30, { testObject: 'test string' });
+            const cache = new Cache<any>(30, { testObject: 'test string' });
 
             await sleep(30);
 
@@ -71,7 +71,7 @@ describe('Cache', () => {
         it('Should be valid again if updated with new value', async () => {
             const testObject1 = { testObject1: 'test string1' };
             const testObject2 = { testObject2: 'test string2' };
-            const cache = new Cache(10, testObject1);
+            const cache = new Cache<any>(10, testObject1);
             const result = cache.getValue();
 
             // Valid

@@ -1,11 +1,11 @@
-export default class Cache {
+export default class Cache<T> {
     cacheTime: number;
 
-    private value: any;
+    private value: T | null;
 
-    private timeStamp: number = null;
+    private timeStamp: number | null = null;
 
-    constructor(cacheTime: number = 20 * 60 * 1000, initialValue: any = null) {
+    constructor(cacheTime: number = 20 * 60 * 1000, initialValue: T | null = null) {
         this.cacheTime = cacheTime;
         this.value = initialValue;
 
@@ -19,7 +19,7 @@ export default class Cache {
         return this.value;
     }
 
-    update(value) {
+    update(value: T) {
         this.value = value;
         this.timeStamp = new Date().getTime();
     }

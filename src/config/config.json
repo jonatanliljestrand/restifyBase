@@ -1,14 +1,14 @@
 {
-  "urls": {
-    "imageBase": "http://localhost:8080",
-    "sampleUrl": "http://www.google.com"
-  },
-  "serverConfiguration": {
-    "name": "Service",
-    "version": "1.0.0",
-    "listenPort": "8080"
-  },
-  "test": {
-    "apiBase": "http://localhost:8080"
-  }
+    "urls": {
+        "imageBase": "http://localhost:8080",
+        "sampleUrl": "http://www.google.com"
+    },
+    "serverConfiguration": {
+        "name": "Service",
+        "version": "1.0.0",
+        "listenPort": "8080"
+    },
+    "test": {
+        "apiBase": "http://localhost:8080"
+    }
 }
