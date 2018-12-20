@@ -13,24 +13,24 @@ const newClient = () => {
     return client;
 };
 
-async function get(path) {
+const get = async (path: string) => {
     const client = newClient();
 
     return client.get(path);
-}
+};
 
-async function post(path, data) {
+const post = async (path: string, data: any) => {
     const client = newClient();
 
     return client.post(path, data);
-}
+};
 
-export function getSample() {
-    const path = '/getSample';
+export function getGoogle() {
+    const path = '';
     return get(path);
 }
 
-export function postSample(data) {
+export function postSample(data: any) {
     const path = '/postSample';
     return post(path, data);
 }

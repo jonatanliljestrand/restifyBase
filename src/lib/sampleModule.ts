@@ -1,11 +1,6 @@
-// import externalController from './externalHttpController';
+import { getGoogle } from './externalHttpController';
 
-export default function sampleFunction(req, data) {
-    const returnObject = data;
-
-    /* externalController.getSample(req).then((body) => {
-    console.log(body); */
-    returnObject.extraData = 'body';
-    return returnObject;
-//  });
+export default async function sampleFunction() {
+    const response = await getGoogle();
+    return response.data;
 }

@@ -1,7 +1,7 @@
 {
   "urls": {
     "imageBase": "http://localhost:8080",
-    "sampleUrl": "http://sample:80"
+    "sampleUrl": "http://www.google.com"
   },
   "serverConfiguration": {
     "name": "Service",

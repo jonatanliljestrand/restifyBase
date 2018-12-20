@@ -7,6 +7,8 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "resolveJsonModule": true,
+        "noUnusedParameters": true,
+        "noImplicitUseStrict": true,
         "types": [
             "node",
             "mocha",

@@ -1,5 +1,5 @@
 import restify from 'restify';
-import postSample from '../controllers/sampleController';
+import { postSample, getSample } from '../controllers/sampleController';
 import ping from '../controllers/pingController';
 
 import log from './utils/logger';
@@ -13,6 +13,7 @@ export default function createServer(serverConfiguration) {
     server.use(restify.plugins.bodyParser());
 
     server.get('/ping', ping);
+    server.get('/getSample', getSample);
     server.post('/postSample/:variable1/:variable2', postSample);
 
     function initiate(callback = null) {

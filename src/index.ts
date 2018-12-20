@@ -4,4 +4,4 @@ import createServer from './lib/server';
 
 const server = createServer(config.serverConfiguration);
 
-server.initiate(config.serverConfiguration);
+server.initiate();
