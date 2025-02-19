@@ -15,28 +15,24 @@
   "author": "Jonatan Liljestrand",
   "license": "MIT",
   "dependencies": {
-    "@types/restify": "^7.2",
-    "@types/restify-errors": "^4.3",
-    "@types/node": "^10.12",
-    "axios": "^0.18",
-    "restify": "^7.2",
-    "restify-errors": "^6.1",
-    "tsutils": "^3.5",
-    "typescript": "^3.2"
+    "@types/node": "latest",
+    "fastify": "latest",
+    "tsutils": "latest",
+    "typescript": "latest"
   },
   "devDependencies": {
-    "@types/chai": "^4.1",
-    "@types/mocha": "^5.2",
-    "@types/nock": "^9.3",
-    "chai": "^4.2",
-    "eslint": "^5.10",
-    "eslint-config-airbnb-base": "^13.1",
-    "eslint-plugin-import": "^2.14",
-    "istanbul": "^0",
-    "mocha": "^5.2",
-    "nock": "^10.0",
-    "nodemon": "^1.18",
-    "ts-node": "^7.0.1",
-    "typescript-eslint-parser": "^21.0"
+    "@types/chai": "latest",
+    "@types/mocha": "latest",
+    "@types/nock": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "chai": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-import": "latest",
+    "mocha": "latest",
+    "nock": "latest",
+    "nodemon": "latest",
+    "nyc": "latest",
+    "ts-node": "latest"
   }
 }
