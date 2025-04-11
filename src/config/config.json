@@ -6,7 +6,8 @@
     "serverConfiguration": {
         "name": "Service",
         "version": "1.0.0",
-        "listenPort": "8080"
+        "listenPort": "8080",
+        "logger": "true"
     },
     "test": {
         "apiBase": "http://localhost:8080"

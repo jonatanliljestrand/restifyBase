@@ -1,9 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import { RequestHandlerType } from 'restify';
+import { FastifyRequest, FastifyReply } from 'fastify';
 
-const ping:RequestHandlerType = (_, res, next) => {
-    res.send('pong');
-    return next();
+const pingHandler = async (_: FastifyRequest, res: FastifyReply): Promise<void> => {
+    res.send({ message: 'pong' });
 };
 
-export default ping;
+export default pingHandler;

@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run compile; npm run run",
-    "run": "node dist/index.js",
+    "run": "node dist/server",
     "compile": "node_modules/.bin/tsc",
     "test": "node_modules/mocha/bin/mocha -w --require ts-node/register src/tests/*",
     "coverage": "node_modules/istanbul/lib/cli.js cover _mocha -- -R spec src/tests/*spec.ts",
